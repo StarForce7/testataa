@@ -88,12 +88,23 @@ $(function() {
         if (App.lastResult !== code) {
             App.lastResult = code;
             
-	    $input = $("#haku");
+var countDecodedCodes=0, err=0;
+$.each(result.codeResult.decodedCodes, function(id,error){
+    if (error.error!=undefined) {
+        countDecodedCodes++;
+        err+=parseFloat(error.error);
+    }
+});
+if (err/countDecodedCodes < 0.1) {
+     $input = $("#haku");
 	    $input.val(result.codeResult.code);
 	if(String(result.codeResult.code).length == 13){
             $("#interactive").hide();
 	    Quagga.stop();
         }}
+}
+
+	   
 
     });
 
