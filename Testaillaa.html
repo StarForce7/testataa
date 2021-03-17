@@ -1,0 +1,89 @@
+<DOCTYPE! html>
+<html>
+<head>
+
+   <meta charset="UTF-8">
+
+   <style>
+   @charset "UTF-8";
+
+   
+   ul
+   {
+      list-style-type:none;
+      margin:0;
+      padding:0;
+   }
+
+div.Haku
+{
+    height:7%;
+    width:100%;
+}
+
+   div.viewport
+   {
+      height:92%;
+      width:100%;
+      margin:0;
+      position:relative;
+      overflow:auto;
+      top:0;
+      left:0;
+      display:none;
+   }
+
+   video
+   {
+      width:100%;
+      height:100%;
+   }
+
+   canvas.drawingBuffer
+   {
+      top:0;
+      left:0;
+      position:absolute;
+      width: 100%;
+      height: 100%;
+   }
+   
+   @media only screen and (min-width: 1000px)
+   {
+      canvas.drawingBuffer
+      {
+         display:block;
+      }
+      div.viewport
+      {
+         display:none;
+      }
+      li
+      {
+         display:none;
+      }
+   }
+
+   </style>
+
+</head>
+
+<body>
+<div class="Haku">
+<button id="button" style="width:20%; height:100%;font-size:100%;">Etsi</button>
+<input type="text" id="haku" placeholder="Hae..." style="width:79%; height:100%; font-size:100%;">
+</div>   
+<div id="interactive" class="viewport"></div>
+   <div id="result_strip" class="tulos">
+      <ul class="thumbnails"></ul>
+   </div>
+
+<script src="quagga.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script src="ScriptiWat.js"></script>
+
+
+</body>
+</html>
