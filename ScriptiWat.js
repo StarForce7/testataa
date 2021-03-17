@@ -90,9 +90,10 @@ $(function() {
             
 	    $input = $("#haku");
 	    $input.val(result.codeResult.code);
+	if(String(result.codeResult.code).length == 13){
             $("#interactive").hide();
 	    Quagga.stop();
-        }
+        }}
 
     });
 
