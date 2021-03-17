@@ -90,7 +90,6 @@ $(function() {
             
 	    $input = $("#haku");
 	    $input.val(result.codeResult.code);
-
             $("#interactive").hide();
 	    Quagga.stop();
         }
