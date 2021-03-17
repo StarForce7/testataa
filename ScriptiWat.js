@@ -85,14 +85,14 @@ $(function() {
 
     Quagga.onDetected(function(result) {
         var code = result.codeResult.code;
-        if(String(App.lastResult).length == 13){if (App.lastResult !== code) {
+        if (App.lastResult !== code) {
             App.lastResult = code;
-            
+            if(String(code).length == 13) {
 	    $input = $("#haku");
 	    $input.val(result.codeResult.code);
             $("#interactive").hide();
-	    Quagga.stop();
-        }}
+	    Quagga.stop();}
+        }
 
     });
 
