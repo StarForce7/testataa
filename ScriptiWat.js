@@ -38,6 +38,12 @@ $(function() {
         state: {
             inputStream: {
                 type : "LiveStream",
+area: { // defines rectangle of the detection/localization area
+    top: "40%",    // top offset
+    right: "0%",  // right offset
+    left: "0%",   // left offset
+    bottom: "40%"  // bottom offset
+  },
                 constraints: {
                     width: {min: 640},
                     height: {min: 480},
@@ -49,12 +55,7 @@ $(function() {
                 patchSize: "medium",
                 halfSample: true
             },
-	area: { // defines rectangle of the detection/localization area
-    top: "40%",    // top offset
-    right: "0%",  // right offset
-    left: "0%",   // left offset
-    bottom: "40%"  // bottom offset
-  },
+	
             numOfWorkers: navigator.hardwareConcurrency,
             frequency: 7,
             decoder: {
