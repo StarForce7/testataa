@@ -58,11 +58,13 @@ area: { // defines rectangle of the detection/localization area
 	
             numOfWorkers: navigator.hardwareConcurrency,
             frequency: 7,
-locate: false,
+
             decoder: {
-                readers : ["ean_reader","ean_8_reader"]
+                readers : ["ean_reader","ean_8_reader"],
+debug: {
+                        drawBoundingBox: true}
             },
-            //locate: true
+            locate: false
         },
         lastResult : null
 	
