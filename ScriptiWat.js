@@ -62,7 +62,8 @@ area: { // defines rectangle of the detection/localization area
             decoder: {
                 readers : ["ean_reader","ean_8_reader"],
 debug: {
-                        drawScanline: true}
+                        drawScanline: true,
+drawBoundingBox: false}
             },
             locate: false
         },
