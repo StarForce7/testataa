@@ -42,6 +42,7 @@ div.Haku
 position:absolute;
 float:left;
 clear:both;
+z-index:2
    }
 
    canvas.drawingBuffer
@@ -81,9 +82,9 @@ clear:both;
 </div>   
 <div id="interactive" class="viewport">
 
-<div style="height:40%; width:100%; background-color:black; opacity:0.5; position:absolute; float:left; overflow:hidden;">lol</div>
-<div style="height:20%; width:100%;  position:absolute; float:left; overflow:hidden; top:40%">lol</div>
-<div style="height:40%; width:100%; background-color:black; opacity:0.5; position:absolute; float:left; overflow:hidden; top:60%;">lol</div>
+<div style="height:40%; width:100%; background-color:black; opacity:0.5; position:absolute; float:left; overflow:hidden; z-index:1;">lol</div>
+<div style="height:20%; width:100%;  position:absolute; float:left; overflow:hidden; top:40% z-index:1;">lol</div>
+<div style="height:40%; width:100%; background-color:black; opacity:0.5; position:absolute; float:left; overflow:hidden; top:60%; z-index:1;">lol</div>
 </div>
    
 <div id="result_strip" class="tulos">
