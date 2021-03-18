@@ -62,7 +62,7 @@ locate: false,
             decoder: {
                 readers : ["ean_reader","ean_8_reader"]
             },
-            locate: true
+            //locate: true
         },
         lastResult : null
 	
