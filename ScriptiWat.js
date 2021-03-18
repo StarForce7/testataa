@@ -105,7 +105,7 @@ $.each(result.codeResult.decodedCodes, function(id,error){
         err+=parseFloat(error.error);
     }
 });
-if (err/countDecodedCodes < 0.1) {
+if (err/countDecodedCodes < 0.08) {
      $input = $("#haku");
 	    $input.val(result.codeResult.code);
 	if(String(result.codeResult.code).length == 13){
