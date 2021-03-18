@@ -50,10 +50,10 @@ $(function() {
                 halfSample: true
             },
 	area: { // defines rectangle of the detection/localization area
-    top: "0%",    // top offset
+    top: "40%",    // top offset
     right: "0%",  // right offset
     left: "0%",   // left offset
-    bottom: "0%"  // bottom offset
+    bottom: "40%"  // bottom offset
   },
             numOfWorkers: navigator.hardwareConcurrency,
             frequency: 7,
