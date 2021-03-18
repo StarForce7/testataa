@@ -30,14 +30,7 @@ $(function() {
         },
 
 
-document.getElementById('valo').onclick = function(o){
-if (capabilities.torch) {
-    track.applyConstraints({
-      advanced: [{torch: true}]
-    })
-    .catch(e => console.log(e));
-  }
-   },   
+   
 
 
 
