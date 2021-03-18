@@ -28,7 +28,19 @@ $(function() {
                 capabilities = track.getCapabilities();
             }
         },
-      
+
+
+document.getElementById('valo').onclick = function(o){
+if (capabilities.torch) {
+    track.applyConstraints({
+      advanced: [{torch: true}]
+    })
+    .catch(e => console.log(e));
+  }
+   },   
+
+
+
         initCameraSelection: function(){
             var streamLabel = Quagga.CameraAccess.getActiveStreamLabel();    
         },
