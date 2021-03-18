@@ -50,7 +50,7 @@ $(function() {
                 halfSample: true
             },
             numOfWorkers: navigator.hardwareConcurrency,
-            frequency: 20,
+            frequency: 5,
             decoder: {
                 readers : ["ean_reader","ean_8_reader"]
             },
