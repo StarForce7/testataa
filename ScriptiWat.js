@@ -49,8 +49,14 @@ $(function() {
                 patchSize: "medium",
                 halfSample: true
             },
+	area: { // defines rectangle of the detection/localization area
+    top: "0%",    // top offset
+    right: "0%",  // right offset
+    left: "0%",   // left offset
+    bottom: "0%"  // bottom offset
+  },
             numOfWorkers: navigator.hardwareConcurrency,
-            frequency: 5,
+            frequency: 7,
             decoder: {
                 readers : ["ean_reader","ean_8_reader"]
             },
