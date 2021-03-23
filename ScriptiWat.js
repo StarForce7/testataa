@@ -119,6 +119,7 @@ if (err/countDecodedCodes < 0.08) {
     });
 
 });
-document.getElementById('valo').onclick = function(e){var track = Quagga.CameraAccess.getActiveTrack();
-track.applyConstraints({advanced: [{torch: true}]});}
+document.getElementById('valo').onclick = function(e){if(paalla){var track = Quagga.CameraAccess.getActiveTrack();
+track.applyConstraints({advanced: [{torch: false}]}); paalla = false;}var track = Quagga.CameraAccess.getActiveTrack();
+track.applyConstraints({advanced: [{torch: true}]});paalla = true;}
 }
