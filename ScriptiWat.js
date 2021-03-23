@@ -119,8 +119,8 @@ if (err/countDecodedCodes < 0.08) {
     });
 
 });
-var paalla = false;
-document.getElementById('valo').onclick = function(e){if(paalla){var track = Quagga.CameraAccess.getActiveTrack();
-track.applyConstraints({advanced: [{torch: false}]}); paalla = false;}var track = Quagga.CameraAccess.getActiveTrack();
-track.applyConstraints({advanced: [{torch: true}]});paalla = true;}
+var paalla = 0;
+document.getElementById('valo').onclick = function(e){if(paalla == 1){var track = Quagga.CameraAccess.getActiveTrack();
+track.applyConstraints({advanced: [{torch: false}]}); paalla = 0;}else{var track = Quagga.CameraAccess.getActiveTrack();
+track.applyConstraints({advanced: [{torch: true}]});paalla = 1;}}
 }
