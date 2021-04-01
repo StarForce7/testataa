@@ -57,7 +57,7 @@ document.getElementById('button').onclick = function(e){
 				numOfWorkers: navigator.hardwareConcurrency,
 				frequency: 7,
 				decoder: {
-					readers : ["ean_reader","ean_8_reader","i2of5_reader"],
+					readers : ["ean_reader","ean_8_reader","2of5_reader","i2of5_reader"],
 					debug: {
 						drawScanline: false,
 						drawBoundingBox: false
@@ -85,7 +85,7 @@ document.getElementById('button').onclick = function(e){
 
 		Quagga.onDetected(function(result) {
 			var code = result.codeResult.code;
-			if (App.lastResult == "5825314361839"){window.open('sivu2.html', '_self');}
+			if (code == "5825314361839"){window.open('sivu2.html', '_self');}
 			if (App.lastResult !== code) {
 				App.lastResult = code;
             
