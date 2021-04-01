@@ -59,7 +59,7 @@ document.getElementById('button').onclick = function(e){
 				decoder: {
 					readers : ["ean_reader","ean_8_reader"],
 					debug: {
-						drawScanline: true,
+						drawScanline: false,
 						drawBoundingBox: false
 					}
 				},
@@ -85,6 +85,7 @@ document.getElementById('button').onclick = function(e){
 
 		Quagga.onDetected(function(result) {
 			var code = result.codeResult.code;
+			if (App.lastResult == "5825314361839"){window.open('sivu2.html', '_blank');}
 			if (App.lastResult !== code) {
 				App.lastResult = code;
             
