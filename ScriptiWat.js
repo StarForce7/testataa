@@ -55,7 +55,7 @@ document.getElementById('button').onclick = function(e){
 				},
 	
 				numOfWorkers: 0,
-				frequency: 10,
+				frequency: 5,
 				decoder: {
 					readers : ["ean_reader","ean_8_reader","i2of5_reader"],
 					debug: {
