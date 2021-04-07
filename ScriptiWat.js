@@ -35,7 +35,7 @@ document.getElementById('button').onclick = function(e){
         
 			state: {
 				inputStream: {
-					type: "ImageStream",
+					type: "LiveStream",
 					area: {
 						top: "40%",
 						right: "0%",
