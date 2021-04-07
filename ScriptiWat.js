@@ -50,14 +50,14 @@ document.getElementById('button').onclick = function(e){
 					}
 				},
 				locator: {
-					patchSize: "medium",
+					patchSize: "small",
 					halfSample: true
 				},
 	
 				numOfWorkers: navigator.hardwareConcurrency,
 				frequency: 7,
 				decoder: {
-					readers : ["ean_reader","ean_8_reader","2of5_reader","i2of5_reader"],
+					readers : ["ean_reader","ean_8_reader","i2of5_reader"],
 					debug: {
 						drawScanline: false,
 						drawBoundingBox: false
