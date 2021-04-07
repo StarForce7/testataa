@@ -59,7 +59,7 @@ document.getElementById('button').onclick = function(e){
 				decoder: {
 					readers : ["ean_reader","ean_8_reader","i2of5_reader"],
 					debug: {
-						drawScanline: false,
+						drawScanline: true,
 						drawBoundingBox: false
 					}
 				},
