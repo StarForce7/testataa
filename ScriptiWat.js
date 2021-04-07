@@ -37,10 +37,10 @@ document.getElementById('button').onclick = function(e){
 				inputStream: {
 					type: "LiveStream",
 					area: {
-						top: "40%",
-						right: "0%",
-						left: "0%",
-						bottom: "40%"
+						//top: "40%",
+						//right: "0%",
+						//left: "0%",
+						//bottom: "40%"
 					},
 					constraints: {
 						width: {min: 640},
