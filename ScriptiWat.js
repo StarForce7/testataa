@@ -55,7 +55,7 @@ document.getElementById('button').onclick = function(e){
 				},
 	
 				numOfWorkers: 0,
-				frequency: 50,
+				frequency: 10,
 				decoder: {
 					readers : ["ean_reader","ean_8_reader","i2of5_reader"],
 					debug: {
@@ -86,7 +86,7 @@ document.getElementById('button').onclick = function(e){
 
 		Quagga.onDetected(function(result) {
 			var code = result.codeResult.code;
-			if (code == "5825314361839"){window.open('sivu2.html', '_self');}
+			//if (code == "5825314361839"){window.open('sivu2.html', '_self');}
 			if (App.lastResult !== code) {
 				App.lastResult = code;
             
@@ -100,10 +100,10 @@ document.getElementById('button').onclick = function(e){
 				if (err/countDecodedCodes < 0.08) {
 					$input = $("#haku");
 					$input.val(result.codeResult.code);
-					if(String(result.codeResult.code).length >= 13 ){
+					//if(String(result.codeResult.code).length >= 13 ){
 						$("#interactive").hide();
 						Quagga.stop();
-					}
+					//}
 				}
 			}
 		});
