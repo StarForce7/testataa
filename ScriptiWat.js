@@ -60,8 +60,7 @@ document.getElementById('button').onclick = function(e){
 					readers : ["ean_reader","ean_8_reader","i2of5_reader"],
 					debug: {
 						drawScanline: false,
-						drawBoundingBox: false,
-						showPattern: false
+						drawBoundingBox: false
 					}
 				},
 				locate: false
