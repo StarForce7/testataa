@@ -55,7 +55,7 @@ document.getElementById('button').onclick = function(e){
 				},
 	
 				numOfWorkers: navigator.hardwareConcurrency,
-				frequency: 7,
+				frequency: 50,
 				decoder: {
 					readers : ["ean_reader","ean_8_reader","i2of5_reader"],
 					debug: {
