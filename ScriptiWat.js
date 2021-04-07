@@ -50,7 +50,7 @@ document.getElementById('button').onclick = function(e){
 					}
 				},
 				locator: {
-					patchSize: "small",
+					patchSize: "medium",
 					halfSample: true
 				},
 	
