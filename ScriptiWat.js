@@ -61,7 +61,7 @@ document.getElementById('button').onclick = function(e){
 					debug: {
 						drawScanline: false,
 						drawBoundingBox: false,
-						showPattern: true
+						showPattern: false
 					}
 				},
 				locate: false
