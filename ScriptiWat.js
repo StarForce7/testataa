@@ -101,10 +101,13 @@ document.getElementById('button').onclick = function(e){
 					$input = $("#haku");
 					$input.val(result.codeResult.code);
 					if(String(result.codeResult.code).length >= 13 ){
-						if(String(result.codeResult.code).length === 14 &&  String(result.codeResult.code).includes("13606")){
-					$("#interactive").hide();
-					Quagga.stop();
-					}
+						if (String(result.codeResult.code).length === 14 && String(result.codeResult.code).includes("13606")) {
+							$("#interactive").hide();
+							Quagga.stop();
+						} else if (String(result.codeResult.code).length === 13) {
+							$("#interactive").hide();
+							Quagga.stop();
+						}
 					}
 				//}
 			}
