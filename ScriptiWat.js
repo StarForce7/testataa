@@ -100,8 +100,8 @@ document.getElementById('button').onclick = function(e){
 				//if (err / countDecodedCodes < 0.08) {
 					$input = $("#haku");
 					$input.val(result.codeResult.code);
-					if(String(result.codeResult.code).length >= 13 String(result.codeResult.code).includes("13606")){
-						if(String(result.codeResult.code).length === 14 &&  ){
+					if(String(result.codeResult.code).length >= 13 ){
+						if(String(result.codeResult.code).length === 14 &&  String(result.codeResult.code).includes("13606")){
 					$("#interactive").hide();
 					Quagga.stop();
 					}
